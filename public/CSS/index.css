@@ -3,7 +3,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     background-color: hsl(240, 58%, 45%);
-    background-image: url(../fondo.jpg) ;
+    background-image: url(../resources/images/fondo.jpg) ;
     background-size: 1500px 800px;
     background-attachment: fixed;
     background-repeat: no-repeat;
