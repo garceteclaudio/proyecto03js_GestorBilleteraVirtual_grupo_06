@@ -1,0 +1,139 @@
+body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: hsl(240, 58%, 45%);
+    background-image: url(../fondo.jpg) ;
+    background-size: 1500px 800px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: #273479;
+}
+.inicio{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 40px;
+    background-color: #04264a;
+    color: aliceblue;
+    padding: 12px 24px;
+    border-radius: 50%;
+    margin: 20px;
+    position: fixed;
+    z-index: 100;
+    opacity: 50%;
+}
+.inicio:hover{
+    background-color: #d4e9ff;
+    color: #212d61;
+    opacity: 100%;
+}
+div{
+    box-sizing: border-box;
+}
+.form_input{
+    padding: 6px 20px;
+}
+.linea{
+    margin-left: 30px;
+    font-size: 1.3rem
+}
+form{
+    background-color: transparent;
+    min-width: 300px;
+    backdrop-filter: blur(100px);
+    padding: 20px 30px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 20px #2669cd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 10;
+}
+form:hover{
+    box-shadow: 0 0 25px#e0d6eb;
+}
+
+.form-box{
+    box-sizing: border-box;
+    border: 5px solid #ddd;
+    border-radius: 30px;
+}
+
+
+input, select{
+    width: 80%;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border:none;  
+    border-bottom: 3px solid #212d61;
+    color: #ddd;
+    background-color:transparent;
+}
+select{
+    color: #212d61;
+    background-color: transparent;
+}
+input::placeholder{
+    color: #eee;
+}
+input:focus{
+    outline: none;
+}
+h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5PX #c7dcee;
+}
+label{
+    line-height: 2;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 0 0 5px #d4e9ff;
+}
+option{
+    background-color: #ddd;
+}
+button{
+
+    width: 100px;
+    padding: 20px;
+}
+button{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #212d61;
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 0 10px #240e67;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #ddd;
+    
+}
+
+button:hover{
+    background-color: #e0dcf5;
+    color:#212d61;
+    box-shadow: 0 0 5px #ddd;
+    font-size: 1.2rem;
+}
