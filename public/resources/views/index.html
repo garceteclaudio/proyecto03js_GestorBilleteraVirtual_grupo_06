@@ -1,26 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billetera Virtual</title>
     <link rel="stylesheet" href="../../CSS/index.css" />
-    <!--<link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />-->
-    <!--
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>-->
-    <script
-      src="https://kit.fontawesome.com/1088cc7807.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/1088cc7807.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -30,34 +15,40 @@
       </div>
       <form action="" id="formulario-flexbox">
         <h2>Formulario de Compra</h2>
-        <!--FORMULARIO TEXTO-->
+        <!-- NOMBRE -->
         <div class="form_input">
           <label for="nombre">Nombre Completo</label>
           <input type="text" id="nombre" /><i
             class="fa-solid fa-user linea"
           ></i>
         </div>
+        <!-- TRANSACCIONES -->
         <div class="form_input">
-          <label for="edad">Cantidad de Transacciones</label>
-          <input type="number" /><i
+          <label for="transacciones">Cantidad de Transacciones</label>
+          <input type="number" id="transacciones"/><i
             class="fa-solid fa-cart-arrow-down linea"
           ></i>
         </div>
-        <!--FORMULARIO SELECT-->
+        <!-- MÉTODO DE PAGO -->
         <div class="form_input">
           <label for="select">Método de Pago</label>
           <select name="type-of-user" id="select">
             <option value="PayPal">PayPal</option>
+<<<<<<< Updated upstream
             <option value="BNA">BNA</option>
+=======
+            <option value="Transferencia">Transferencia</option>
+>>>>>>> Stashed changes
             <option value="Mercado Pago">Mercado Pago</option></select
           ><i class="fa-solid fa-credit-card linea"></i>
         </div>
+        <!-- BOTONES -->
         <div>
-          <button type="submit">Cargar</button>
+          <button type="submit" id="cargar">Cargar</button>
+          <button type="button" id="verListado">Ver Listado</button>
         </div>
       </form>
     </main>
-    <footer></footer>
     <script src="../../../src/index.js"></script>
   </body>
 </html>

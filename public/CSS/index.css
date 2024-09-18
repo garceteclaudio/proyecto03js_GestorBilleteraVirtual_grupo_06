@@ -75,7 +75,7 @@ input, select{
     padding: 6px 12px;
     border:none;  
     border-bottom: 3px solid #212d61;
-    color: #ddd;
+    color: #212d61;
     background-color:transparent;
 }
 select{
@@ -136,4 +136,24 @@ button:hover{
     color:#212d61;
     box-shadow: 0 0 5px #ddd;
     font-size: 1.2rem;
+}
+
+/* Listado de Cuentas */
+
+.listado {
+    background-color: transparent;
+    background-color: #e7e7e7;
+    filter: opacity(75%);
+    backdrop-filter: blur(100px);
+    padding: 20px 30px 50px;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 20px #2669cd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 10;
+    font-size: 21px;
 }
