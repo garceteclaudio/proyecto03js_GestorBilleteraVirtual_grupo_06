@@ -2,9 +2,8 @@ body{
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
-    background-color: hsl(240, 58%, 45%);
+    background-size: cover;
     background-image: url(../resources/images/fondo.jpg) ;
-    background-size: 1500px 800px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,36 +12,47 @@ body{
     gap: 0px;
     color: #273479;
 }
+
+/* Botón de inicio */
+
 .inicio{
     display: inline-block;
     text-decoration: none;
     font-size: 40px;
     background-color: #04264a;
     color: aliceblue;
-    padding: 12px 24px;
+    padding: 12px;
     border-radius: 50%;
-    margin: 20px;
+    margin: 25px 35px;
     position: fixed;
     z-index: 100;
     opacity: 50%;
 }
+
 .inicio:hover{
     background-color: #d4e9ff;
     color: #212d61;
     opacity: 100%;
 }
+
+/* Formulario */
+
 div{
     box-sizing: border-box;
 }
+
 .form_input{
     padding: 6px 20px;
 }
+
 .linea{
     margin-left: 30px;
     font-size: 1.3rem
 }
+
 form{
-    background-color: transparent;
+    background-color: #e7e7e7;
+    filter: opacity(75%);
     min-width: 300px;
     backdrop-filter: blur(100px);
     padding: 20px 30px;
@@ -56,6 +66,7 @@ form{
     gap: 30px;
     z-index: 10;
 }
+
 form:hover{
     box-shadow: 0 0 25px#e0d6eb;
 }
@@ -65,7 +76,6 @@ form:hover{
     border: 5px solid #ddd;
     border-radius: 30px;
 }
-
 
 input, select{
     width: 80%;
@@ -78,16 +88,20 @@ input, select{
     color: #212d61;
     background-color:transparent;
 }
+
 select{
     color: #212d61;
     background-color: transparent;
 }
+
 input::placeholder{
     color: #eee;
 }
+
 input:focus{
     outline: none;
 }
+
 h2{
     text-align: center;
     margin: 0;
@@ -99,6 +113,7 @@ h2{
     letter-spacing: 5px;
     text-shadow: 0 0 5PX #c7dcee;
 }
+
 label{
     line-height: 2;
     font-size: 1.1em;
@@ -106,14 +121,11 @@ label{
     font-weight: 700;
     text-shadow: 0 0 5px #d4e9ff;
 }
+
 option{
     background-color: #ddd;
 }
-button{
 
-    width: 100px;
-    padding: 20px;
-}
 button{
     display: block;
     margin: auto;
@@ -121,14 +133,14 @@ button{
     background-color: #212d61;
     border: none;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     box-shadow: 0 0 10px #240e67;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
     color: #ddd;
-    
+    padding: 20px;
 }
 
 button:hover{
