@@ -1,5 +1,7 @@
 # TP03 - Grupo06
 
+![Screenshot](public/resources/images/ejercicio.png)
+
 Integrantes:
 
 Murillo Jose Omar
