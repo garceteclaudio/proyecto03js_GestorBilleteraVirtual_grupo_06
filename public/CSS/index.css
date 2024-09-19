@@ -13,8 +13,6 @@ body{
     color: #273479;
 }
 
-/* Botón de inicio */
-
 .inicio{
     display: inline-block;
     text-decoration: none;
@@ -35,7 +33,6 @@ body{
     opacity: 100%;
 }
 
-/* Formulario */
 
 div{
     box-sizing: border-box;
@@ -149,8 +146,6 @@ button:hover{
     box-shadow: 0 0 5px #ddd;
     font-size: 1.2rem;
 }
-
-/* Listado de Cuentas */
 
 .listado {
     background-color: transparent;
