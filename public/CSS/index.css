@@ -36,6 +36,7 @@ body{
 
 div{
     box-sizing: border-box;
+    margin: 0;
 }
 
 .form_input{
@@ -124,7 +125,7 @@ option{
 }
 
 button{
-    display: block;
+    
     margin: auto;
     margin-top: 10px;
     background-color: #212d61;
@@ -132,19 +133,40 @@ button{
     border-radius: 10px;
     width: 50%;
     box-shadow: 0 0 10px #240e67;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
     color: #ddd;
     padding: 20px;
+    cursor: pointer;
+    
+}
+.bt-chico{
+    box-sizing: border-box;
+    margin:auto;
+    font-size: 1rem;
+    width: 45%;
+    margin:0;
+    margin-left: 12px
+}
+.bt-grande{
+    font-size: 1.rem;
+    display: block;
+    width: 90%;
+    margin:auto;
+    margin-top: 20px;
 }
 
 button:hover{
-    background-color: #e0dcf5;
-    color:#212d61;
-    box-shadow: 0 0 5px #ddd;
-    font-size: 1.2rem;
+    background-color: #000000e7;
+    color:#f9f9f9;
+    box-shadow: 0 0 20px #1a0749;
+    
+}
+button:active{
+    background-color: #ddd;
+    color: #224;
 }
 
 .listado {

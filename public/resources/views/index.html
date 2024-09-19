@@ -21,14 +21,14 @@
         <!-- NOMBRE -->
         <div class="form_input">
           <label for="nombre">Nombre Completo</label>
-          <input type="text" id="nombre" /><i
+          <input type="text" id="nombre" required/><i
             class="fa-solid fa-user linea"
           ></i>
         </div>
         <!-- TRANSACCIONES -->
         <div class="form_input">
           <label for="transacciones">Cantidad de Transacciones</label>
-          <input type="number" id="transacciones" /><i
+          <input type="number" id="transacciones" required/><i
             class="fa-solid fa-cart-arrow-down linea"
           ></i>
         </div>
@@ -48,10 +48,10 @@
         </div>
         <!-- BOTONES -->
         <div>
-          <button type="submit" id="cargar">Cargar</button>
-          <button type="button" id="verListado">Ver Listado</button>
-          <button type="button" id="masTransacciones" onclick="irAOtroHtml()">
-            Billetera con mas transacciones
+          <button type="submit" id="cargar" class="bt-chico">Cargar</button>
+          <button type="button" id="verListado" class="bt-chico">Ver Listado</button>
+          <button type="button" id="masTransacciones" class="bt-grande" onclick="irAOtroHtml()">
+            Billeteras con mas transacciones
           </button>
         </div>
       </form>
