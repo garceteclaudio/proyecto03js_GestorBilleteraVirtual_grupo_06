@@ -36,16 +36,21 @@
         <div class="form_input">
           <label for="select">Método de Pago</label>
           <select name="type-of-user" id="select">
+            <option value="Fiwind">Fiwind</option>
+            <option value="Lemon Cash">Lemon Cash</option>
             <option value="PayPal">PayPal</option>
             <option value="Transferencia">Transferencia</option>
-            <option value="Mercado Pago">Mercado Pago</option></select
+            <option value="Mercado Pago">Mercado Pago</option>
+            <option value="Personal Pay">Personal Pay</option>
+            <option value="Naranja X">Naranja X</option>
+            <option value="Prex">Prex</option></select
           ><i class="fa-solid fa-credit-card linea"></i>
         </div>
         <!-- BOTONES -->
         <div>
           <button type="submit" id="cargar">Cargar</button>
           <button type="button" id="verListado">Ver Listado</button>
-          <button type="button" id="masTransacciones">
+          <button type="button" id="masTransacciones" onclick="irAOtroHtml()">
             Billetera con mas transacciones
           </button>
         </div>
