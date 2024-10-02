@@ -1,18 +1,28 @@
 const express = require('express');
-const app = express()
+const path = require('path'); // Importar path para manejar rutas
+const app = express();
 
-//endpoint
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname+"/public/resources/views/index.html")
+// Servir archivos estáticos desde la carpeta public
+app.use('/src', express.static(path.join(__dirname, 'src')));
+app.use('/public', express.static(path.join(__dirname, 'public')));
+
+// Endpoint para la página de inicio
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, "public/resources/views/index.html"));
 });
 
-//routing
-app.use('/src', express.static(__dirname+"/src"));
-app.use('/public', express.static(__dirname+"/public"))
-app.use('/node_modules', express.static(__dirname+"/node_modules"))
+// Rutas para los archivos HTML
+app.get('/verListado.html', (req, res) => {
+    res.sendFile(path.join(__dirname, "public/resources/views/verListado.html"));
+});
 
-//listening
-app.listen(5000, ()=>{
-    console.log("Iniciando el servidor Node...")
-    console.log("El servidor Node se está ejecutando.")
+app.get('/masTransacciones.html', (req, res) => {
+    res.sendFile(path.join(__dirname, "public/resources/views/masTransacciones.html"));
+});
+
+// Iniciar el servidor
+const PORT = 5000; // O puedes usar process.env.PORT si lo prefieres
+app.listen(PORT, () => {
+    console.log("Iniciando el servidor Node...");
+    console.log(`El servidor Node se está ejecutando en http://localhost:${PORT}`);
 });
